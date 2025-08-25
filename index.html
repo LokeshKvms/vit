@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Accordion</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira Sans:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX Two Text:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Font Awesome 5 Pro:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@500&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+    />
+  </head>
+  <body class="p-4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-8">
+          <!-- Fee Help -->
+          <section id="fee-help" class="container my-2 py-2">
+            <h2 class="section-heading">FEE-HELP AVAILABLE</h2>
+            <p class="section-subheading">
+              Domestic students may be eligible to apply for a FEE-HELP to pay
+              for all or part of your tuition fees.
+            </p>
+            <p id="emph-text">AM I ELIGIBLE?</p>
+            <div class="d-flex align-items-start">
+              <img
+                src="./assets/fee-help-icon.svg"
+                alt="Fee Help Icon"
+                class="me-3"
+                style="width: 40px; height: 40px"
+              />
+
+              <p class="section-subheading mb-0" id="fee-help-desc">
+                If you’re a domestic student and looking to study a course at
+                diploma level or above (except for English Courses) you may be
+                eligible for FEE-HELP.
+                <br /><br />
+                Your eligibility depends on criteria such as your citizenship
+                status, and whether you’re looking to study in an undergraduate,
+                postgraduate of vocational education program.
+                <br /><br />
+                Find out if you're eligible on the Australian Government's
+                <a href="" style="color: #f15b27">Study Assist website.</a>
+              </p>
+            </div>
+          </section>
+
+          <!-- FAQ -->
+          <section id="faq" class="container my-2 py-2 text-center">
+            <h2 class="section-heading">Frequently asked questions</h2>
+            <p class="section-subheading">
+              Your go-to resource for instant answers to common queries, making
+              your journey smoother and more informed.
+            </p>
+            <div class="accordion" id="customAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Is the Master of Business Administration (MBA) Course
+                    accredited and is the qualification recognised by the
+                    Australian Government?
+                    <span class="accordion-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1v14M1 8h14"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#customAccordion"
+                >
+                  <div class="accordion-body">
+                    The Master of Business Administration (MBA) course is
+                    accredited by the Tertiary Education Quality and Standards
+                    Agency (TEQSA), the regulator of higher education and the
+                    accrediting authority for higher education courses in
+                    Australia. You may look up the National Register for this
+                    course. VIT is registered by TEQSA to offer and confer
+                    Australian higher education award for the completion of an
+                    accredited Australian course of study – MBA. The
+                    qualification conferred upon completion is recognised by the
+                    Australian Government and will provide you with a
+                    competitive edge in the job market, both in Australia and
+                    overseas.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    What is the difference between full time and part time
+                    study?
+                    <span class="accordion-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1v14M1 8h14"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#customAccordion"
+                >
+                  <div class="accordion-body">
+                    This is the second accordion item.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    How long will the MBA take me?
+                    <span class="accordion-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1v14M1 8h14"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#customAccordion"
+                >
+                  <div class="accordion-body">
+                    This is the third accordion item.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Can I enrol in the MBA without an undergraduate degree?
+                    <span class="accordion-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1v14M1 8h14"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#customAccordion"
+                >
+                  <div class="accordion-body">
+                    This is the third accordion item.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    Why is your MBA 16 units whereas some others are 11 or 12
+                    units?
+                    <span class="accordion-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1v14M1 8h14"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#customAccordion"
+                >
+                  <div class="accordion-body">
+                    This is the fifth accordion item.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="col-4">
+          <div class="container text-center p-4 px-5" id="learn-more">
+            <div class="row">
+              <h2 class="section-heading col-12 mb-4">Learn More</h2>
+
+              <form class="col-12">
+                <input
+                  type="text"
+                  required
+                  placeholder="Name"
+                  class="form-control custom-input mb-3"
+                />
+
+                <input
+                  type="email"
+                  required
+                  placeholder="Email"
+                  class="form-control custom-input mb-3"
+                />
+
+                <input
+                  id="phone"
+                  type="tel"
+                  required
+                  placeholder="Phone"
+                  class="form-control custom-input mb-3"
+                />
+
+                <button type="submit" class="btn custom-submit w-100">
+                  Submit
+                </button>
+
+                <p class="mt-4" style="color:#4d607d; font-size: 12px; text-align: left;">
+                  * By submitting this form, I agree to VIT's Privacy Policy and
+                  consent to receive updates on courses on promotions.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
