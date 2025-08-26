@@ -1,0 +1,72 @@
+<style>
+  #banner {
+  background-color: #f15b27;
+  color: black;
+  border-radius: 8px 8px 0 0;
+  font-family: "Open Sans", sans-serif !important;
+  font-size: clamp(14px, 1.6vw, 18px);
+  overflow: hidden;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 0 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  z-index: 6969;
+}
+
+#banner p {
+  font-weight: 600;
+  margin: 0 3rem 0 0;
+  display: inline-block;
+  font-size: inherit;
+  letter-spacing: 0.3px;
+}
+
+#banner span {
+  color: white;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 25s linear infinite;
+}
+
+#banner:hover .scrolling-wrapper {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+</style>
+
+<section id="banner" class="container my-3 d-none d-md-flex">
+  <div class="scrolling-wrapper">
+    <p>Next Intake:<span>27-Oct-2025</span></p>
+    <p>Duration:<span>2 Years (Full-Time)</span></p>
+    <p>
+      Course Fee:<span>$28,000 ($1750/unit) - 16 Unit</span> (RPL
+      Available)
+    </p>
+
+    <p>Next Intake:<span>27-Oct-2025</span></p>
+    <p>Duration:<span>2 Years (Full-Time)</span></p>
+    <p>
+      Course Fee:<span>$28,000 ($1750/unit) - 16 Unit</span> (RPL
+      Available)
+    </p>
+  </div>
+</section>
